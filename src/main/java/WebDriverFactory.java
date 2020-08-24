@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class WebDriverFactory {
-    public static Logger logger = LogManager.getLogger(WebDriverFactory.class);
+    private static Logger logger = LogManager.getLogger(WebDriverFactory.class);
 
     public static BrowserType stringToBrowserType(String name) {
         String lowWebDriverName = name.replaceAll("\'","").toLowerCase();
